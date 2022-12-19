@@ -19,5 +19,6 @@ services:
       - REDIS_URI=rediss://default:AVNS_NrmoftbDyDUNDKe1ejN@cloud-computing-dannylyhn-1eb9.aivencloud.com:15329
 
   
+  
 
       

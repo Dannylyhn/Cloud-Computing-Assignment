@@ -1,0 +1,23 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  frontend:
+    build: ./Frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+  
+  backend:
+    build: ./Backend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - MONGO_DB_CONNECTION_STRING=mongodb+srv://danny:sThMAIdN7xo3XMNs@cluster0.vvc23p8.mongodb.net/?retryWrites=true&w=majority
+      - MONGO_DB_NAME=CloudComputing
+      - REDIS_URI=rediss://default:AVNS_NrmoftbDyDUNDKe1ejN@cloud-computing-dannylyhn-1eb9.aivencloud.com:15329
+
+  
+  
+
+    
